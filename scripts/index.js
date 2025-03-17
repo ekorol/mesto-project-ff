@@ -15,6 +15,7 @@ function createCard(content, deleteCard) {
 
   // Подставляем данные в темплейт
   cardElement.querySelector('.card__image').src = content.link;
+  cardElement.querySelector('.card__image').alt = `Фотография места: ${content.name}`; 
   cardElement.querySelector('.card__title').textContent = content.name;
 
   // Добавляем обработчик кнопки удалить
